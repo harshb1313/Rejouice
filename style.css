@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* CSS Boilerplate */
 @font-face {
     font-family: suisseintlR;
@@ -409,4 +410,417 @@ body {
     to {
       transform: translateX(-50%);
     }
+=======
+/* CSS Boilerplate */
+@font-face {
+    font-family: suisseintlR;
+    src: url(./assets/Suisseintl-Regular.ttf);
+}
+
+@font-face {
+    font-family: suisseintlL;
+    src: url(./assets/Suisseintl-Light.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow: hidden;
+    height: 100%;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+
+}
+
+.loader {
+    height: 100vh;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 3vw;
+    gap: 10px;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.loader h3 {
+    transform: translateY(20px);
+}
+
+.page {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.page1-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.bg-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.cursor {
+    height: 6.5vw;
+    width: 6.5vw;
+    z-index: 9;
+    background-color: #ff5f38;
+    position: fixed;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.2rem;
+    font-family: inherit;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    /* transition: transform 0.18s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.18s; */
+    /* opacity: 0.95;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.12); */
+
+}
+
+.cursor h1 {
+    font-size: 15px;
+    font-weight: 100px;
+}
+
+
+.page1-content {
+    position: relative;
+    z-index: 9;
+    width: 100%;
+    height: 100%;
+    /* background-color: black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.page1-content h1 {
+    color: #fff;
+    font-size: 27vw;
+    font-family: suisseintlL;
+    font-weight: 300;
+    margin-bottom: 10vh;
+
+
+
+
+}
+
+.page1-content h1 span {
+    font-family: suisseintlL;
+}
+
+.navbar {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* padding: 2rem 3rem 0 3rem; */
+    padding: 2vw 0 3vw 3vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+}
+
+.navbar-logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 2px;
+    font-family: suisseintlR;
+}
+
+.navbar-menu {
+    font-size: 1.2rem;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 0.6rem 1.5rem;
+    border-radius: 24px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.2s, color 0.2s;
+    font-family: suisseintlL;
+}
+
+.navbar-menu:hover {
+    background: #fff;
+    color: #111;
+}
+
+.page2 {
+    height: 100vh;
+    width: 100%;
+    /* background-color: antiquewhite; */
+}
+
+.element {
+    height: 30vw;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.elem-bar {
+    height: 110px;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.181);
+    font-family: suisseintlL;
+    padding: 1vh;
+    margin-top: 5vh;
+}
+
+.elem-1 h1 {
+    font-size: 2.2rem;
+    font-weight: 400;
+    line-height: 2.8rem;
+    font-family: suisseintlL, Arial, sans-serif;
+    margin: 0 0 0.5rem 0;
+}
+
+.elem-2 {
+    height: 100%;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+
+.elem-2 h2 {
+    font-size: 1.3rem;
+    font-weight: 300;
+    /* line-height: 1.7rem; */
+    font-family: suisseintlR, Arial, sans-serif;
+    margin: 0;
+    letter-spacing: 1px;
+
+}
+
+.elem-content {
+    width: 95%;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.elem-content h1 {
+    font-size: 3.5vw;
+    font-weight: 300;
+    line-height: 1.3;
+    font-family: suisseintlL, Arial, sans-serif;
+    color: #333;
+    margin: 1.5vw 0;
+    width: 90%;
+    /* background-color: #ff5f38; */
+}
+
+.line-mask {
+    overflow: hidden;
+    padding: 0.2rem 0;
+    position: relative;
+}
+
+.line-content {
+    transform: translateY(100%);
+    opacity: 0;
+    will-change: transform, opacity;
+    display: block;
+}
+
+.elem-content h1 .word {
+    display: inline-block;
+    margin-right: 0.3em;
+    transform-origin: center bottom;
+}
+
+.page3 {
+    height: 100vh;
+    width: 100%;
+    /* background-color: #ff5f38; */
+}
+
+.page3-top {
+    width: 100%;
+    text-align: center;
+}
+
+.page3-top h4 {
+    font-size: 1.2vw;
+    font-weight: 300;
+    margin-top: 2vw;
+}
+
+.page3-top h4 span {
+    font-style: italic;
+    font-family: suisseintlL;
+}
+
+.page3-top h2 {
+    font-size: 4vw;
+    font-weight: 300;
+    line-height: 1;
+    font-family: suisseintlL;
+    text-decoration: underline;
+}
+
+.page3-content {
+    height: 90vh;
+    width: 100%;
+    /* background-color: #ff5f38; */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3vw;
+}
+
+.box {
+    height: 100%;
+    width: 33%;
+    background-color: antiquewhite;
+    position: relative;
+}
+
+.page3-content .box video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.page3-content .box img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    transition: all 0.8s ease;
+}
+
+.page3-content .box:hover img {
+    opacity: 0;
+}
+
+.page4 {
+    height: 100vh;
+    width: 100%;
+    padding: 4vw 0;
+    position: relative;
+    margin-top: 30vh;
+}
+
+.page4-content h1 {
+    font-size: 8vw;
+    font-family: suisseintlR;
+    font-weight: 100;
+    width: 96%;
+    margin-left: 2%;
+    border-bottom: 2px solid black;
+}
+
+/* .swiperimg {
+    height: 60vh;
+    width: 100%;
+    padding: 2vw 0;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.swiper {
+    margin-left: auto;
+    margin-right: auto;
+} */
+
+.swiper {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 8vh;
+
+}
+
+.swiper-wrapper {
+    display: flex;
+    width: max-content;
+    animation: scrollSwiper 30s linear infinite;
+}
+
+.swiper-slide {
+    width: auto;
+    flex-shrink: 0;
+    margin-right: 20px;
+    display: flex;
+    align-items: flex-end;
+    /* Aligns the image to the bottom vertically */
+    justify-content: center;
+}
+
+.swiper-slide img {
+    /* width: auto; */
+    height: auto;
+    max-height: 60vh;
+    display: block;
+    /* height: 60vh; */
+    /* object-fit: cover; */
+
+}
+
+@keyframes scrollSwiper {
+    from {
+      transform: translateX(0);
+    }
+  
+    to {
+      transform: translateX(-50%);
+    }
+>>>>>>> 37a524184afc2c36ff98c1918119cafd10455b37
   }
